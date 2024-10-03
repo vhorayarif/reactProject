@@ -2,14 +2,26 @@
 <html>
     <head></head>
     <body>
-        <div>
-            <h1>Team</h1>
-            <ul>
-                <li>A. Lovelace</li>
-                <li>G. Hopper</li>
-                <li>M. Hamilton</li>
-            </ul>
-            <button>Like (0)</button>
-        </div>
+        <div id="app"></div>
+        
+        <script type="text/javascript">
+            // select the div element with 'app' id
+            const app = document.getElementById('app');
+
+            // Create new H1 element
+            const header = document.createElement('h1');
+
+            // create a new text node for H1 element
+
+            const text = 'Develop. Preview. Ship.';
+            const headerContent = document.createTextNode(text);
+
+            //Append the text to the H1 element
+            header.appendChild(headerContent);
+
+            //place the H1 element inside the div
+            app.appendChild(header);
+
+        </script>
     </body>
 </html>
